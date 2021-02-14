@@ -1,8 +1,8 @@
-module be.inf1.mavenproject2 {
+module be.inf1.breakout {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.base;
     requires javafx.media;
     opens be.inf1.atariBreakout to javafx.fxml;
-    exports be.inf1.atariBreakout;
+    exports be.inf1.breakout;
 }

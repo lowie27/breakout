@@ -1,4 +1,4 @@
-package be.inf1.atariBreakout;
+package be.inf1.breakout;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -17,7 +17,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("model"), 1100, 600);
+        scene = new Scene(loadFXML("startPagina"), 1100, 600);
         stage.setTitle("Atari Breakout");
         stage.setScene(scene);
         stage.show();
