@@ -1,7 +1,7 @@
 package model;
 
-import be.inf1.atariBreakout.StartPaginaController;
-import be.inf1.atariBreakout.TimerPeddel;
+import be.inf1.breakout.StartPaginaController;
+import be.inf1.breakout.TimerPeddel;
 import javafx.scene.control.Alert;
 
 import java.util.ArrayList;
@@ -93,8 +93,8 @@ public class Spel {
         botsingBalPowerUp();
         PowerUpVoorbij();
         toonPowerUp();
-        checkGewonnen();
-        notificatie();
+        //checkGewonnen();
+        //notificatie();
     }
 
     /**

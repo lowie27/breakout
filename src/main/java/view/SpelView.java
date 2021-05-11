@@ -31,22 +31,24 @@ public class SpelView {
     public SpelView(Spel spel, Pane paneel, Paneel paneelModel) {
         this.spel = spel;
         this.paneel = paneel;
+
         for (Bal bal : spel.getBallen()) {
             balView = new BalView(bal);
             paneel.getChildren().add(balView);
         }
+
         paneelView = new PaneelView(paneelModel);
         peddelView = new PeddelView(spel.getPeddel());
         powerUpView = new PowerUpView(spel.getPowerUp());
         maakBallenView();
-        paneel.getChildren().addAll(paneelView, peddelView, powerUpView);
+        maakStenenView();
+        this.paneel.getChildren().addAll(paneelView, peddelView, powerUpView);
     }
 
     /**
      * deze methode update SpelView
      */
     public void update() {
-        System.out.println("update");
         paneel.getChildren().clear();
         maakBallenView();
         maakStenenView();
@@ -67,9 +69,8 @@ public class SpelView {
         for (int j = 0; j < spel.getRijen(); j++) {
             for (int i = 0; i < spel.getKolommen(); i++) {
                 Steen s = spel.getSteen(j, i);
-
                 SteenView sv = new SteenView(s);
-                paneel.getChildren().add(sv);
+                paneel.getChildren().addAll(sv);
             }
         }
     }

@@ -1,5 +1,6 @@
-package be.inf1.atariBreakout;
+package be.inf1.breakout;
 
+import be.inf1.breakout.InstellingenController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -59,7 +60,6 @@ public class StartPaginaController {
      * in deze video komt alles wat we gebruiken aanbod (geldt ook voor anderen klassen)
      */
     private void gaNaarGame(ActionEvent t) {
-        System.out.println("catch");
         if (level1.isSelected()) {
             straalBal = 10;
             peddelBreedte = 500;

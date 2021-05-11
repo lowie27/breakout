@@ -1,6 +1,6 @@
 package model;
 
-import be.inf1.atariBreakout.StartPaginaController;
+import be.inf1.breakout.StartPaginaController;
 
 /**
  * klasse Peddel

@@ -29,11 +29,14 @@ public class SteenView extends Region {
      * deze methode maakt een nieuwe steen aan
      */
     private void maakSteen() {
-        Rectangle r = new Rectangle(steen.getBreedte(), steen.getHoogte(), Color.RED);
-        r.setStroke(Color.ORANGE);
-        r.setStrokeType(StrokeType.INSIDE);
-        r.setStrokeWidth(2);
-        r.setTranslateX(steen.getX());
-        r.setTranslateY(steen.getY());
+        if(!steen.isGeraakt()) {
+            Rectangle r = new Rectangle(steen.getBreedte(), steen.getHoogte(), Color.RED);
+            r.setStroke(Color.ORANGE);
+            r.setStrokeType(StrokeType.INSIDE);
+            r.setStrokeWidth(2);
+            r.setTranslateX(steen.getX());
+            r.setTranslateY(steen.getY());
+            getChildren().add(r);
+        }
     }
 }

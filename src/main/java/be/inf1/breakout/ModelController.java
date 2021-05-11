@@ -1,4 +1,4 @@
-package be.inf1.atariBreakout;
+package be.inf1.breakout;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

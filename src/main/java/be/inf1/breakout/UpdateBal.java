@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package be.inf1.atariBreakout;
+package be.inf1.breakout;
 
 import javafx.application.Platform;
 import model.Bal;

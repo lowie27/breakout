@@ -3,6 +3,6 @@ module be.inf1.breakout {
     requires javafx.fxml;
     requires java.base;
     requires javafx.media;
-    opens be.inf1.atariBreakout to javafx.fxml;
+    opens be.inf1.breakout to javafx.fxml;
     exports be.inf1.breakout;
 }

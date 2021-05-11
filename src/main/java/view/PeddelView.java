@@ -30,7 +30,7 @@ public class PeddelView extends Region {
      * deze methode update PeddelView
      */
     private void update() {
-        getChildren().clear();
+        maakPeddel();
         p.setTranslateX(peddel.getX());
         p.setTranslateY(peddel.getY());
         getChildren().add(p);
@@ -40,7 +40,6 @@ public class PeddelView extends Region {
      * deze methode maakt een nieuwe peddel aan
      */
     private void maakPeddel() {
-        getChildren().clear();
         p = new Rectangle(peddel.getHuidigeBreedte(), peddel.getHoogte(), Color.GREEN);
 
     }
